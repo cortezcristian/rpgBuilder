@@ -8,9 +8,18 @@ app.get('/', function(req, res){
 
 // Admin Panel URLs
 app.get('/admin', function(req, res){
-    res.render('admin/index', { title: 'Admin Panel', section: 'Admin Panel' });
+    if(typeof req.user != "undefined" && typeof req.user.role != "undefined" && req.user.role == "admin"){
+        res.redirect('/panel');
+    }else{
+        res.render('admin/index', { title: 'Admin Panel', section: 'Admin Panel' });
+    }
 });
 
 app.get('/panel', function(req, res){
-    res.render('admin/panel', { title: 'Admin Panel', section: 'Admin Panel' });
+    //authorize role
+    if(typeof req.user != "undefined" && typeof req.user.role != "undefined" && req.user.role == "admin"){
+        res.render('admin/panel', { title: 'Admin Panel', section: 'Admin Panel' });
+    }else{
+        res.redirect('/admin');
+    }
 });

@@ -12,7 +12,7 @@
 1.3 Running the tests
 1.4 Running Database tests
 1.5 Running Follow Links tests
-1.6 Running Login tests
+1.6 Running Admin Panel tests
 
 1.1 Installing dependencies
 ==================================================================================
@@ -52,9 +52,9 @@ To run Rserve test cases you should run:
 
 $ mocha test/followLinks.js -R spec
 
-1.6 Running Login tests
+1.6 Running Admin Panel tests
 ==================================================================================
 To run Login test cases you should run:
 
-$ mocha -t 10000 -R spec test/login.js
+$ mocha -t 10000 -R spec test/adminPanel.js
 

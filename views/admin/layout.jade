@@ -1,3 +1,4 @@
+- var loggedIn = (typeof user != 'undefined') ? true : false;
 doctype 5
 html
   head
@@ -19,7 +20,7 @@ html
           // Title Area 
           li.name
             h1
-              a(href='#') Top Bar Title 
+              a(href='#') Rpg Builder 
           // Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone 
           li.toggle-topbar.menu-icon
             a(href='#')
@@ -132,10 +133,10 @@ html
                   .small-8.columns
                     input(type='text')
                   .small-4.columns
-                    a.alert.button(href='#') Search
+                    a.button(href='#') Search
             li.divider.show-for-small
             li.has-form
-              a.button(href='#') Button!
+              a.alert.button(href='/logout') Logout
 
     // End Nav
 
