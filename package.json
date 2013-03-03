@@ -8,6 +8,14 @@
   "dependencies": {
     "express": "3.0.2",
     "jade": "*",
-    "stylus": "*"
+    "stylus": "*",
+    "i18n": "*",
+    "mongoose": "*",
+    "passport": "*",
+    "passport-local": "*",
+    "connect-mongo": "*", 
+    "express-validator": "*",
+    "connect-flash": "*",
+    "moment": "*"
   }
 }

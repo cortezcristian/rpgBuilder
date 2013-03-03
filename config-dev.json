@@ -1,0 +1,15 @@
+{
+    "app": {
+        "domain" : "127.0.0.1",
+        "port": 4000
+    },
+    "session" : {
+        "secret" : "mybestsecret"
+    },
+    "db": {
+        "domain" : "localhost",
+        "name" : "rpgBuilder_dev",
+        "user" : "",
+        "pass" : ""
+    }
+}
